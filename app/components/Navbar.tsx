@@ -3,7 +3,7 @@
 import { useState, useCallback } from "react"
 import type React from "react" // Added import for React
 
-const NavItem = ({ href, text, onClick }: { href: string; text: string; onClick: () => void }) => (
+const NavItem = ({ href, text, onClick }: { href: string; text: string; onClick: (e: React.MouseEvent<HTMLAnchorElement>) => void }) => (
   <a
     href={href}
     onClick={onClick}
