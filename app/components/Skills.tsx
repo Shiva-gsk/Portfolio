@@ -1,5 +1,5 @@
 import type React from "react"
-import { Code, Palette, Database } from "lucide-react"
+import { Code, Bot, Database } from "lucide-react"
 
 const SkillCard = ({
   icon: Icon,
@@ -30,9 +30,9 @@ export default function Skills() {
             description="Experienced with Node.js, Express, and database technologies like MongoDB and PostgreSQL."
           />
           <SkillCard
-            icon={Palette}
-            title="UI/UX Design"
-            description="Skilled in creating intuitive and visually appealing user interfaces with tools like Figma."
+            icon={Bot}
+            title="AI / ML"
+            description="Proficient in developing intelligent and adaptive user experiences by leveraging advanced AI and machine learning algorithms."
           />
         </div>
       </div>
