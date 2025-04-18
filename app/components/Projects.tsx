@@ -22,7 +22,7 @@ const ProjectCard = ({
       alt={title}
       width={400}
       height={200}
-      className="w-full h-48 object-contain object-center"
+      className="w-full h-48 object-contain object-center opacity-70 hover:opacity-[100%] transition-opacity duration-300"
     />  
     <div className="p-6">
       <h3 className="text-xl font-semibold mb-2 text-gray-800">{title}</h3>
@@ -63,17 +63,17 @@ export default function Projects() {
       liveUrl: "https://huggingface.co/spaces/Shiva-gsk/Text-Summarizer-with-T5",
     },
     {
-      title: "Project 2",
+      title: "Digital Wallet Management System",
       description: "Description of your second project, highlighting key features and your role.",
-      imageUrl: "/placeholder.svg?height=200&width=400",
+      imageUrl: "/Digital-Wallet-Management-System.png",
       githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
-      liveUrl: "https://url-shortner-1to6.onrender.com/",
+      liveUrl: "https://digital-wallet-management-system.vercel.app/",
     },
     {
-      title: "Project 3",
+      title: "Url Shortner",
       description: "Overview of your third project, including challenges overcome and lessons learned.",
       imageUrl: "/placeholder.svg?height=200&width=400",
-      githubUrl: "https://github.com/yourusername/project3",
+      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
       liveUrl: "https://project3-demo.com",
     },
   ]
@@ -87,10 +87,10 @@ export default function Projects() {
       liveUrl: "https://project4-demo.com",
     },
     {
-      title: "Project 5",
+      title: "Url Shortner",
       description: "Another exciting project demonstrating your expertise.",
       imageUrl: "/placeholder.svg?height=200&width=400",
-      githubUrl: "https://github.com/yourusername/project5",
+      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
       liveUrl: "https://project5-demo.com",
     },
   ]

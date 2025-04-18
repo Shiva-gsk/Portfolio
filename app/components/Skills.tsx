@@ -1,5 +1,12 @@
+"use client"
 import type React from "react"
 import { Code, Bot, Database } from "lucide-react"
+import { gsap } from "gsap";
+import { useGSAP } from "@gsap/react";
+    
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const SkillCard = ({
   icon: Icon,
@@ -14,6 +21,9 @@ const SkillCard = ({
 )
 
 export default function Skills() {
+  useGSAP(()=>{
+    gsap.fromTo(".skill-card", {opacitiy: 0, y: 50}, {opacity: 1, y: 0, duration: 1, stagger: 0.2, scrollTrigger: {}})
+  })
   return (
     <section id="skills" className="py-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
