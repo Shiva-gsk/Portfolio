@@ -65,7 +65,7 @@ export default function Projects() {
     {
       title: "Digital Wallet Management System",
       description: "Description of your second project, highlighting key features and your role.",
-      imageUrl: "/Digital-Wallet-Management-System.png",
+      imageUrl: "/Digital-Wallet-Management.png",
       githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
       liveUrl: "https://digital-wallet-management-system.vercel.app/",
     },

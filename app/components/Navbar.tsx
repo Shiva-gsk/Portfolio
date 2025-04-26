@@ -1,5 +1,5 @@
 "use client"
-
+import "./Navbar.css";
 import { useState, useCallback } from "react"
 import type React from "react" // Added import for React
 
@@ -75,9 +75,10 @@ export default function Navbar() {
       </div>
 
       {(
-        <div className={`md:hidden transition-all  ${
-      isOpen ? "opacity-100 scale-y-100 max-h-full block duration-500 ease-in-out transform" : "max-h-0 opacity-0 scale-y-0"
-    } origin-top`}>
+        <div className={`nav-ele md:hidden overflow-hidden transition-all duration-500 ease-in-out origin-top ${
+          isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}>
+        
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 transform transition duration-500 ">
             <NavItem href="#home" text="Home" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavItemClick(e, "#home")} />
             <NavItem href="#skills" text="Skills" onClick={(e: React.MouseEvent<HTMLAnchorElement>) => handleNavItemClick(e, "#skills")} />
