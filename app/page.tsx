@@ -7,6 +7,8 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Github, Instagram, Mail } from "lucide-react"
+import Link from "next/link"
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -22,7 +24,7 @@ export default function Home() {
       <Navbar />
       <main>
         <section id="home" className="py-20">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10">
             <div className="text-center">
               <h1 className="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl">
                 <span className="block">Hey there, This is Shiva Kumar</span>
@@ -55,9 +57,19 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl font-bold mb-4">Get in Touch</h2>
           <p className="mb-4">I&apos;m always open to new opportunities and collaborations.</p>
-          <a href="mailto:your.email@example.com" className="text-indigo-400 hover:text-indigo-300">
-            shivagulapala2005@example.com
+          <div className="flex justify-center item-center gap-3 text-lg mt-2">
+          <Link href={"https://www.instagram.com/shivag_sk/"} className="text-pink-400 hover:text-indigo-300"><Instagram/></Link>
+          <a href="mailto:your.email@example.com" className="text-red-400 hover:text-indigo-300">
+          <Mail/>
           </a>
+                <Link href={"https://github.com/Shiva-gsk"} className="hover:text-indigo-300"><Github/></Link>
+
+          </div>
+          
+        </div>
+        <br />
+        <div className="w-full bg-gray-800 text-center" >
+                    Made with ❤️ by Shiva
         </div>
       </footer>
     </div>
