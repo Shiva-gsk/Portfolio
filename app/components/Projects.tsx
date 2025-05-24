@@ -82,7 +82,7 @@ export default function Projects() {
     {
       title: "PokeVision",
       description: "A Web App for Pokemon lovers to capture images and fill their Pokedex leveraging AI.",
-      imageUrl: "/placeholder.svg?height=200&width=400",
+      imageUrl: "/PokeVision.png",
       githubUrl: "https://github.com/Shiva-gsk/PokeVision",
       liveUrl: "https://poke-vision.vercel.app/",
     },
