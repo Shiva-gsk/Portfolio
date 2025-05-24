@@ -64,14 +64,14 @@ export default function Projects() {
     },
     {
       title: "Digital Wallet Management System",
-      description: "Description of your second project, highlighting key features and your role.",
+      description: "A secure digital wallet management system for managing transactions, balances, and user accounts.",
       imageUrl: "/Digital-Wallet-Management.png",
       githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
       liveUrl: "https://digital-wallet-management-system.vercel.app/",
     },
     {
       title: "Url Shortner",
-      description: "Overview of your third project, including challenges overcome and lessons learned.",
+      description: "A tool for shortening URLs, making them more manageable and shareable.",
       imageUrl: "/placeholder.svg?height=200&width=400",
       githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
       liveUrl: "https://project3-demo.com",
@@ -80,18 +80,18 @@ export default function Projects() {
 
   const extraProjects = [
     {
-      title: "Project 4",
-      description: "An additional project showcasing your diverse skill set.",
+      title: "PokeVision",
+      description: "A Web App for Pokemon lovers to capture images and fill their Pokedex leveraging AI.",
       imageUrl: "/placeholder.svg?height=200&width=400",
-      githubUrl: "https://github.com/yourusername/project4",
-      liveUrl: "https://project4-demo.com",
+      githubUrl: "https://github.com/Shiva-gsk/PokeVision",
+      liveUrl: "https://poke-vision.vercel.app/",
     },
     {
-      title: "Url Shortner",
-      description: "Another exciting project demonstrating your expertise.",
+      title: "Nim",
+      description: "A two-player mathematical game of strategy with an AI player trained using Reinforcement Learning.",
       imageUrl: "/placeholder.svg?height=200&width=400",
-      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
-      liveUrl: "https://project5-demo.com",
+      githubUrl: "https://github.com/Shiva-gsk/Nim",
+      liveUrl: "https://github.com/Shiva-gsk/Nim",
     },
   ]
 
