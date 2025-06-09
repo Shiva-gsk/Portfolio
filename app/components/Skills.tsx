@@ -5,8 +5,8 @@ import { gsap } from "gsap";
 import { useGSAP } from "@gsap/react";
     
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { SplitText } from "gsap/SplitText";
+gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const SkillCard = ({
   icon: Icon,
@@ -21,14 +21,55 @@ const SkillCard = ({
 )
 
 export default function Skills() {
-  useGSAP(()=>{
-    // gsap.fromTo(".skill-card", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 5, stagger: 0.2, scrollTrigger: {}})
+   useGSAP(() => {
+    gsap.fromTo(
+      "#home", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}
+    );
+    document.fonts.ready.then(() => {
+      const split1 = SplitText.create(".my-skills", {
+      type: "lines, words, chars",
+      // linesClass: "line",
+    }
     
+  );
+    gsap.fromTo(
+      split1.chars,
+      {opacity: 0, y: 50},
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1.5,
+        ease: "power2.out",
+        stagger: 0.05,
+      }
+    );
+
+
+    });
+
+    gsap.fromTo(
+      ".skill-card",
+      { opacity: 0, y: 100},
+      {
+      opacity: 1,
+      y: 0,
+      // duration: 1.5,
+      ease: "power3.inOut",
+      stagger: 0.15,
+      scrollTrigger: {
+        trigger: "#skills",
+        start: "top 55%",
+        toggleActions: "play none none none",
+      },
+      }
+    );
+    
+
   });
   return (
     <section id="skills" className="py-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-extrabold text-gray-800 text-center mb-12">My Skills</h2>
+        <h2 className="my-skills text-3xl font-extrabold text-gray-800 text-center mb-12">My Skills</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <SkillCard
             icon={Code}

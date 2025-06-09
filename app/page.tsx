@@ -18,12 +18,14 @@ export default function Home() {
       "#home", {opacity: 0, y: 20}, {opacity: 1, y: 0, duration: 1}
     );
     document.fonts.ready.then(() => {
-      const split = SplitText.create(".about", {
+      const split1 = SplitText.create(".about", {
       type: "lines, words, chars",
       // linesClass: "line",
-    });
+    }
+    
+  );
     gsap.fromTo(
-      split.chars,
+      split1.chars,
       {opacity: 0, y: 20},
       {
         opacity: 1,
@@ -33,6 +35,8 @@ export default function Home() {
         stagger: 0.005,
       }
     );
+
+
     });
     
 
