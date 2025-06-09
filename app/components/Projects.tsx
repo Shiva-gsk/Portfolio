@@ -56,13 +56,6 @@ export default function Projects() {
 
   const initialProjects = [
     {
-      title: "Text Summarization with T5",
-      description: "Product reviews summazier made by Finetuning T5 model",
-      imageUrl: "/text-summarizer.png",
-      githubUrl: "https://github.com/Shiva-gsk/T5-summarizer",
-      liveUrl: "https://huggingface.co/spaces/Shiva-gsk/Text-Summarizer-with-T5",
-    },
-    {
       title: "Digital Wallet Management System",
       description: "A secure digital wallet management system for managing transactions, balances, and user accounts.",
       imageUrl: "/Digital-Wallet-Management.png",
@@ -70,22 +63,31 @@ export default function Projects() {
       liveUrl: "https://digital-wallet-management-system.vercel.app/",
     },
     {
-      title: "Url Shortner",
-      description: "A tool for shortening URLs, making them more manageable and shareable.",
-      imageUrl: "/placeholder.svg?height=200&width=400",
-      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
-      liveUrl: "https://project3-demo.com",
+      title: "Text Summarization with T5",
+      description: "Product reviews summazier made by Finetuning T5 model",
+      imageUrl: "/text-summarizer.png",
+      githubUrl: "https://github.com/Shiva-gsk/T5-summarizer",
+      liveUrl: "https://huggingface.co/spaces/Shiva-gsk/Text-Summarizer-with-T5",
     },
-  ]
-
-  const extraProjects = [
-    {
+     {
       title: "PokeVision",
       description: "A Web App for Pokemon lovers to capture images and fill their Pokedex leveraging AI.",
       imageUrl: "/PokeVision.png",
       githubUrl: "https://github.com/Shiva-gsk/PokeVision",
       liveUrl: "https://poke-vision.vercel.app/",
     },
+    
+  ]
+
+  const extraProjects = [
+    {
+      title: "Url Shortner",
+      description: "A tool for shortening URLs, making them more manageable and shareable.",
+      imageUrl: "/placeholder.svg?height=200&width=400",
+      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
+      liveUrl: "https://url-shortner-1to6.onrender.com",
+    },
+   
     {
       title: "Nim",
       description: "A two-player mathematical game of strategy with an AI player trained using Reinforcement Learning.",
