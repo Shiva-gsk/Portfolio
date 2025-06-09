@@ -13,7 +13,7 @@ const SkillCard = ({
   title,
   description,
 }: { icon: React.ElementType; title: string; description: string }) => (
-  <div className="flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out">
+  <div className="skill-card flex flex-col items-center p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out">
     <Icon className="w-12 h-12 text-indigo-500 mb-4" />
     <h3 className="text-lg font-semibold mb-2 text-black">{title}</h3>
     <p className="text-gray-600 text-center">{description}</p>
@@ -22,8 +22,9 @@ const SkillCard = ({
 
 export default function Skills() {
   useGSAP(()=>{
-    gsap.fromTo(".skill-card", {opacitiy: 0, y: 50}, {opacity: 1, y: 0, duration: 1, stagger: 0.2, scrollTrigger: {}})
-  })
+    // gsap.fromTo(".skill-card", {opacity: 0, y: 50}, {opacity: 1, y: 0, duration: 5, stagger: 0.2, scrollTrigger: {}})
+    
+  });
   return (
     <section id="skills" className="py-20 bg-gray-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
