@@ -59,8 +59,8 @@ export default function Projects() {
       title: "Digital Wallet Management System",
       description: "A secure digital wallet management system for managing transactions, balances, and user accounts.",
       imageUrl: "/Digital-Wallet-Management.png",
-      githubUrl: "https://github.com/Shiva-gsk/Url-shortner",
-      liveUrl: "https://digital-wallet-management-system.vercel.app/",
+      githubUrl: "https://github.com/Shiva-gsk/DigiWallet-MCP",
+      liveUrl: "https://digiwallet.shivagulapala.me/",
     },
     {
       title: "Text Summarization with T5",
@@ -74,7 +74,7 @@ export default function Projects() {
       description: "A Web App for Pokemon lovers to capture images and fill their Pokedex leveraging AI.",
       imageUrl: "/PokeVision.png",
       githubUrl: "https://github.com/Shiva-gsk/PokeVision",
-      liveUrl: "https://poke-vision.vercel.app/",
+      liveUrl: "https://pokevision.shivagulapala.me/",
     },
     
   ]
